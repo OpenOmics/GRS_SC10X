@@ -49,7 +49,7 @@ grs_sc10x.py run \
 ### Execution-bcl
 
 ```bash
-/grs_sc10x.py run \
+grs_sc10x.py run \
 --title sc_gex_bcl \
 --input /data/RTB_GRS/SequencerRuns/GRS_0088_Wishart/230324_NS500353_0204_AHLYKTBGXM/ \
 --input-type bcl \
