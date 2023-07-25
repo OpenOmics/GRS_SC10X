@@ -43,7 +43,8 @@ python grs_sc10x.py run \
 --design /data/RTB_GRS/ActiveProjects/GRS_0088_Wishart/wishart_sample_design.csv \
 --output /data/$USER/Test_Space/GRS_SC10X \
 --mode slurm
-
+##
+cd /data/$USER/Test_Space/GRS_SC10X/sc_gex_fastq
 sbatch --cpus-per-task=16 --mem=16g --time=24:00:00 sc_gex_fastq_GRS_SC10X_execution.sh
 ```
 
@@ -59,7 +60,8 @@ python grs_sc10x.py run \
 --output /data/$USER/Test_Space/GRS_SC10X \
 --sample-sheet /data/RTB_GRS/ActiveProjects/user_project/cellranger_mkfastq_0204_AHLYKTBGXM/CellRanger_SampleSheet_GRS_0088.csv \
 --mode slurm
-
+##
+cd /data/$USER/Test_Space/GRS_SC10X/sc_gex_bcl
 sbatch --cpus-per-task=16 --mem=16g --time=24:00:00 sc_gex_bcl_GRS_SC10X_execution.sh
 ```
 
