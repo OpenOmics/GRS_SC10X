@@ -29,14 +29,14 @@ git clone https://github.com/OpenOmics/GRS_SC10X.git
 cd GRS_SC10X/
 
 # Get usage information
-./grs_sc10x.py -h
+python ./grs_sc10x.py -h
 ```
 
 
 ### Execution-fastq
 
 ```bash
-grs_sc10x.py run \
+python grs_sc10x.py run \
 --title sc_gex_fastq \
 --input /data/RTB_GRS/ActiveProjects/user_project/cellranger_mkfastq_0204_AHLYKTBGXM/HLYKTBGXM/ \
 --input-type fastq \
@@ -44,12 +44,14 @@ grs_sc10x.py run \
 --design /data/RTB_GRS/ActiveProjects/GRS_0088_Wishart/wishart_sample_design.csv \
 --output /data/$USER/Test_Space/GRS_SC10X \
 --mode slurm
+
+sbatch --cpus-per-task=16 --mem=16g --time=24:00:00 sc_gex_fastq_GRS_SC10X_execution.sh
 ```
 
 ### Execution-bcl
 
 ```bash
-grs_sc10x.py run \
+python grs_sc10x.py run \
 --title sc_gex_bcl \
 --input /data/RTB_GRS/SequencerRuns/GRS_0088_Wishart/230324_NS500353_0204_AHLYKTBGXM/ \
 --input-type bcl \
@@ -58,6 +60,8 @@ grs_sc10x.py run \
 --output /data/$USER/Test_Space/GRS_SC10X \
 --sample-sheet /data/RTB_GRS/ActiveProjects/user_project/cellranger_mkfastq_0204_AHLYKTBGXM/CellRanger_SampleSheet_GRS_0088.csv \
 --mode slurm
+
+sbatch --cpus-per-task=16 --mem=16g --time=24:00:00 sc_gex_bcl_GRS_SC10X_execution.sh
 ```
 
 ## References
