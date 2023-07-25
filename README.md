@@ -13,7 +13,7 @@
 
 
 ## Overview
-GRS_SC10X is able to process both bcl and fastq files.
+GRS_SC10X try to simplify and streamline cellranger process based on different chemistry.
 
 ## Dependencies
 **Requires:** `snakemake>=6.0`
@@ -31,3 +31,34 @@ cd GRS_SC10X/
 # Get usage information
 ./grs_sc10x.py
 ```
+
+
+### Excution-fastq
+
+```bash
+grs_sc10x.py run \
+--title sc_gex_fastq \
+--input /data/RTB_GRS/ActiveProjects/user_project/cellranger_mkfastq_0204_AHLYKTBGXM/HLYKTBGXM/ \
+--input-type fastq \
+--host mouse \
+--design /data/RTB_GRS/ActiveProjects/GRS_0088_Wishart/wishart_sample_design.csv \
+--output /data/$USER/Test_Space/GRS_SC10X \
+--mode slurm
+```
+
+### Excution-bcl
+
+```bash
+/grs_sc10x.py run \
+--title sc_gex_bcl \
+--input /data/RTB_GRS/SequencerRuns/GRS_0088_Wishart/230324_NS500353_0204_AHLYKTBGXM/ \
+--input-type bcl \
+--host mouse \
+--design /data/RTB_GRS/ActiveProjects/user_project/wishart_sample_design.csv \
+--output /data/$USER/Test_Space/GRS_SC10X \
+--sample-sheet /data/RTB_GRS/ActiveProjects/user_project/cellranger_mkfastq_0204_AHLYKTBGXM/CellRanger_SampleSheet_GRS_0088.csv \
+--mode slurm
+```
+
+## References
+<sup>**2.**  Koster, J. and S. Rahmann (2018). "Snakemake-a scalable bioinformatics workflow engine." Bioinformatics 34(20): 3600.</sup>  
