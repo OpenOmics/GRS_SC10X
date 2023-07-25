@@ -21,7 +21,7 @@ GRS_SC10X try to simplify and streamline cellranger process based on different c
 
 ## Installation
 
-### Biowulf
+### NIH_HPC(Biowulf)
 Please clone this repository using the following commands:
 ```bash
 # Clone Repository from Github
