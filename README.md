@@ -29,11 +29,11 @@ git clone https://github.com/OpenOmics/GRS_SC10X.git
 cd GRS_SC10X/
 
 # Get usage information
-./grs_sc10x.py
+./grs_sc10x.py -h
 ```
 
 
-### Excution-fastq
+### Execution-fastq
 
 ```bash
 grs_sc10x.py run \
@@ -46,7 +46,7 @@ grs_sc10x.py run \
 --mode slurm
 ```
 
-### Excution-bcl
+### Execution-bcl
 
 ```bash
 /grs_sc10x.py run \
