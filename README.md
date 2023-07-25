@@ -6,7 +6,6 @@
 
   
   <i>
-    This is the home of the pipeline, GRS_SC10X. <br>
     Aim: streamline and simplify 10X cellranger process
   </i>
 </div>
