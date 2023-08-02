@@ -12,7 +12,7 @@
 
 
 ## Overview
-GRS_SC10X try to simplify and streamline cellranger process based on different chemistry.
+GRS_SC10X to simplify and streamline cellranger process based on different chemistry.
 
 ## Dependencies
 **Requires:** `snakemake>=6.0`
