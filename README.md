@@ -12,7 +12,7 @@
 
 
 ## Overview
-GRS_SC10X to simplify and streamline cellranger process based on different chemistry ;).
+GRS_SC10X to simplify and streamline cellranger process based on different chemistry.
 
 ## Dependencies
 **Requires:** `snakemake>=6.0`
@@ -66,4 +66,4 @@ sbatch --cpus-per-task=16 --mem=16g --time=24:00:00 sc_gex_bcl_GRS_SC10X_executi
 ```
 
 ## References
-<sup>**2.**  Koster, J. and S. Rahmann (2018). "Snakemake-a scalable bioinformatics workflow engine." Bioinformatics 34(20): 3600.</sup>  
+<sup>**1.**  Koster, J. and S. Rahmann (2018). "Snakemake-a scalable bioinformatics workflow engine." Bioinformatics 34(20): 3600.</sup>  
