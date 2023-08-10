@@ -1,0 +1,3 @@
+snakemake/library/__pycache__/utility.cpython-311.pyc
+snakemake/snakemake_rules/cellranger/__pycache__/cellranger_func.cpython-311.pyc
+test/._test_scenarios.sh
