@@ -1,0 +1,5 @@
+template/._GRS_SC10X_reference_metadata.csv
+template/._GRS_SC10X_reference_metadata.csv.old
+test/._test_scenarios.sh
+snakemake/library/__pycache__/utility.cpython-311.pyc
+snakemake/snakemake_rules/cellranger/__pycache__/cellranger_func.cpython-311.pyc
