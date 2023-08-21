@@ -6,7 +6,7 @@
 
   
   <i>
-    Aim: streamline and simplify 10X cellranger process
+    Aim: to streamline and simplify 10X cellranger process
   </i>
 </div>
 
