@@ -1,1 +1,0 @@
-##nextflow version of cellranger
